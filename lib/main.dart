@@ -104,6 +104,67 @@ class CardPage extends StatelessWidget {
                     ),
                   ],
                 ),
+
+                const SizedBox(height: 20),
+
+                Divider(thickness: 2, color: Colors.blueGrey, height: 20),
+                Text(
+                  'Contato',
+                  style: TextStyle(
+                    fontSize: 21,
+                    fontWeight: FontWeight.w400,
+                    color: Colors.black,
+                  ),
+                ),
+
+                SizedBox(height: 10),
+
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+
+                  children: [
+                    ElevatedButton(
+                      onPressed: () {},
+                      style: ElevatedButton.styleFrom(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 20,
+                          vertical: 10,
+                        ),
+                      ),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Icon(Icons.email, color: Colors.black),
+                          SizedBox(width: 8),
+                          Text('E-mail', style: TextStyle(color: Colors.black)),
+                        ],
+                      ),
+                    ),
+
+                    const SizedBox(width: 15),
+
+                    ElevatedButton(
+                      onPressed: () {},
+                      style: ElevatedButton.styleFrom(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 20,
+                          vertical: 10,
+                        ),
+                      ),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Icon(Icons.message, color: Colors.black),
+                          SizedBox(width: 8),
+                          Text(
+                            'WhatsApp',
+                            style: TextStyle(color: Colors.black),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
               ],
             ),
           ),
